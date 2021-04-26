@@ -1,0 +1,86 @@
+<!DOCTYPE html><!-- DOCTYPE => créer un fichier html5 -->
+<html lang="fr"><!-- html balise racine de votre page html, contient TOUT votre code html + lang="en" anglais   -->
+<!--  balise html a toutjours 2 balises enfants et UNIQUEMENT 2 
+    head = donner des informations qui vont permettre à la page html de fonctionner 
+    toutes les informations / balises écrites DANS la balise head NE SONT affichées à l'écran 
+
+    body = donner des informations qui sont affichées DANS l'écran dans la navigateur web 
+-->
+    <head>
+        
+        <meta charset="UTF-8"><!-- méta information : charset : jeu de caractère , attention dans cette page utiliser l'alphabet français 
+        a-z A-Z 0-9 .? éèêàç  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 
+            méta : compatible un vieux navigateur IE => Edge 
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 
+            méta => responsive design 
+            faire en sorte que votre site page web s'affiche correction sur les smartphones / tablettes et ordinateur 
+        -->
+        <title>Document</title>
+        <!-- 
+            titre => rôle central pour nom principal de la page => cette balise qui va être la balise centrale qui va être affichée dans les moteurs de recherches 
+        -->
+    </head>
+    <body>
+        <h1>Bonjour tout le monde</h1>
+        <!-- h1 balise de titre : heading 
+            dans une page html vous n'avez qu'une seule balise h1 
+        -->
+        <p>je découvre HTML </p>
+        <!--  commentaire -->
+        <h2>Section 1</h2>
+        <!-- heading h2, donne les titres   sections différentes parties d'une page 
+        vous pouvez mettre autant de balise h2 que vous avez des sections / zones dans votre page web
+        -->
+        <p>formation Live sur Studi.com</p>
+        <h3>Section 1 - partie 1</h3>
+        <p>avec un peu de texte</p>
+        <h4>Section 1 - partie 1 - alinéa 1</h4>
+
+        <!--  très rare d'avoir à utiliser des balise h5 et h6 -->
+        <h5>Section 1 - partie 1 - alinéa 1 - mention 1</h5>
+
+        <h6>Section 1 - partie 1 - alinéa 1 - mention 1</h6>
+
+        <!--  balise de liste 
+            listes ordonnées : listes numérotées 
+            Ordered List
+                élément de la liste : List Item li
+        -->
+        <ol>
+           <!--  <h2>ici</h2> à ne pas faire -->
+           <!-- p ne pas mettre de balise p -->
+            <li>HTML</li>
+            <li>Visual Studio Code</li>
+            <li>CSS</li>
+        </ol>
+
+        <!-- 
+            liste non ordonnées Unordered List ul
+                élément de la liste : List Item li
+        -->
+        <ul>
+            <li>Formation</li>
+            <li>Font End</li>
+            <li>Back End</li>
+        </ul>
+
+        <!-- 
+            il est possible de modifier l'apparence visuelle de la balise ol via des attributs 
+        -->
+        <ol start="4" >
+            <li>Pomme</li>
+            <li>Poire</li>
+            <li>Abricot</li>
+        </ol>
+
+        <ol type="I">
+            <li>Sapin</li>
+            <li>Chêne</li>
+            <li>Bambou</li>
+        </ol>
+    </body>
+</html>
