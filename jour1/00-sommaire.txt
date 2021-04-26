@@ -1,0 +1,17 @@
+Présentation :
+https://github.com/webdevproformation/html-css-studi
+
+HTML Présentation
+
+Environnement de travail / Visual Studio Code
+
+Vocabulaire : Balises / attribut / Imbrication / commentaire
+
+Balise de structure d'une page 
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body></body>
+</html>
+
+Index des balises 
