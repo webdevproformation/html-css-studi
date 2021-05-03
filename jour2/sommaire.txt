@@ -1,0 +1,42 @@
+Live Studi - 3 Mai 2021 - sommaire 
+
+Malik HARRIZ
+malik.h@webdevpro.net
+https://webdevpro.net
+
+--------------------
+
+ajouter du css à une page html 
+- via l'attribut style
+- via la balise style
+- via la balise link
+
+--------------------
+
+exemple 
+
+--------------------
+
+la syntaxe css 
+selecteur {
+  propriété: valeur ;
+  propriété: valeur ;
+}
+
+--------------------
+
+sélecteur universel *
+
+sélecteur simple
+
+selecteur class / id  . et #
+
+sélecteur composé p a
+
+sélecteurs avancés > + []
+
+sélecteur en fonction de la position de la balise 
+:first-child :last-child :nth-child() :nth-child(2n + 1)
+:first-of-type :last-of-type :nth-of-type()
+
+

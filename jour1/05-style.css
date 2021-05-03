@@ -1,0 +1,39 @@
+/* styliser les h2 Mais ce je veux c'est uniquement mettre en forme le 1er h2*/
+
+/*h2{  mettre en forme TOUS les h2 de la page 
+    color:red;
+}*/
+
+/* pour pouvoir mettre forme uniquement le 1er h2 => allez dans le html et ajouter à la balise concernée un attribut spécial */
+
+#premier{  /*sélectionne la balise unique dans la page html qui a l'attribut
+    id="premier" */
+    color:red;
+}
+
+/* je veux mettre en forme le 1er h2 et le dernier p je veux que les deux soit en border verte*/
+/* 
+h2{
+    border: 1px solid green;
+}
+p{
+    border: 1px solid green;
+} */
+
+.information{ /* sélectionner toutes les balises qui ont l'attribut class="information"*/
+    border: 1px solid green;
+}
+
+#introduction{
+    border: 1px solid red;
+}
+
+.police{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.couleur{
+    background: rosybrown;
+    color:grey;
+}

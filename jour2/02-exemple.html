@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* dans cette balise on ne peut QUE écrire du css */
+        /* pas possible écrire un texte en français */
+        /*<p></p>*/
+        li{ /* sélectionne toutes les balises li quelque soit leur position dans la page html */
+           text-decoration: underline ; 
+           color: blue;
+           font-size:32px /*; facultatif , si vous l'oubliez => le css va continuer à fonctionner !  */
+        }
+        ul{
+            border:2px dotted red
+        }
+    </style>
+    <link rel="stylesheet" href="03-style.css">
+</head>
+<body>
+    <!-- 
+        il existe 3 manières d'associer du css à une page html 
+        première manière d'ajouter un attribut style à la balise html
+    -->
+    <h1 style="color:red; font-size:50px">Premier manière d'ajouter du css </h1>
+    <!-- 
+        première technique vous associez directement dans la balise la ou les règles css
+        live server => extensions > live server > Go live
+        cette technique très intéressant lorsque l'on veut mettre en forme une seule balise // ajouter une ou deux règles maximum 
+        si vous avez à réaliser de nombreuses modifications de la mise en forme cette technique n'est pas conseillée
+    -->
+    <p style="border:1px solid black; background:pink ;">un peu de texte</p>
+    <!-- le dernier ; est facultatif, si tu ne le mets pas le css va être correctement exécuté 
+    par contre le ; entre les différentes règles est OBLIGATOIRE-->
+    <hr>
+    <h2>deuxième manière associer du css à du html </h2>
+    <!-- 
+        d'ajouter une balise style
+        il faut l'insérer dans la balise head de la page 
+        ajouter une liste 
+    -->
+    <ul><!--  unordered list -->
+        <li>Lundi</li><!-- list item -->
+        <li>Mardi</li>
+        <li>Mercredi</li>
+    </ul>
+    <!-- 
+        ça évite de se répéter 1 fois => appliquer à toutes les balises 
+        le deuxième avantage = toutes les règles de mise en forme sont stockées à un seul endroit dans la page html => facilite la maintenance 
+        => désavantage : allonger grandement votre page html et vous allez avoir un document dans lequel on fait deux types de traitements html et de la mise en forme
+
+        tout ca dans le html, je croyais que ça ce faisait pas => comme première technique ça se fait moins 
+        appliquer un style uniquement pour faire un exemple 
+
+        en html5  pas besoin d'ajouter l'attribut type="text/css" à la balise style 
+        le navigateur va directement détecter le langage 
+        en html4 il faut préciser quel langage il faut qu'il exécute 
+    -->
+    <hr>
+    <h3>La dernière technique : créer un fichier .css dédié</h3>
+    <!-- 
+        de créer un fichier .css qui est externe au fichier .html
+        et d'appeler ce fichier via la balise link 
+        03-style.css
+
+        avantages : alléger le code html 
+        réutiliser les règles css qui sont stockées dans le .css sur d'autres pages html 
+        css dans un fichier à part => améliorer la maintenabilité de votre projet web
+        s
+    -->
+</body>
+</html>

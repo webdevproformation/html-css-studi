@@ -1,0 +1,44 @@
+/*
+langage qui permet de styliser une page html 
+
+selecteur{ désigner une ou plusieurs balises html à mettre en forme 
+    propriete : valeur ;
+    propriete : valeur ;
+    propriete : valeur 
+}
+il existe une très grande variété de sélecteur 
+
+sélecteur universelle *
+
+*/
+
+*{ /* TOUTES LES balises h1 h2 p .... présentent dans votre page html */
+    color: blue;
+}
+/* sélecteur simple utiliser le nom de la balise pour effectuer une mise en forme */
+
+h1{ /* toutes les balises h1 dans la page */
+    text-decoration: underline;
+}
+
+p{ /* tous les p dans page */
+    background: orchid;
+    border: 2px solid orangered;
+    font-size: 30px;
+    /* dans un sélecteur donné quelque soit l'ordre => exécuté de la même manière*/
+}
+
+h2{ /*toutes les balise h2 dans la page html */
+    font-size: 50px;
+}
+/* L'ordre des sélecteurs a t-il une importance ? en CSS OUI */
+
+h2{
+    font-size: 10px; /* la navigateur va éxécuter la dernière règle dans le fichier css*/
+}
+
+p{
+    border: 2px solid grey;
+}
+
+/* id / class sélecteur composé */

@@ -1,0 +1,12 @@
+/* on vient de créer un fichier dédié à la mise en forme */
+/* il faut pas écrire de français*/
+/* un commentaire */
+
+/*il est aussi interdit d'écrire des balises html dans 
+ce fichier , UNIQUEMENT du CSS */
+
+h3{
+    color:chartreuse;
+    text-decoration: underline; /* ne pas oublier le ; */
+    font-size:30px /*; si vous l'oubliez ça va fonctionner !*/
+}
