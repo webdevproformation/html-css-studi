@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: magenta ;
+        }
+        p{
+            background: green;
+        }
+        /* une balise en block : largeur est par défaut celle de leur parent 
+        si vous avez deux balises qui sont frères => l'un en dessous de l'autre !! 
+        */
+        a{
+            background: yellow;
+        }
+        span{
+            background: blue;
+        }
+        /* une balise en ligne : largeur est par défaut celle de leur contenu (texte qui est écrit dedans) 
+        a et span sont adjacentes (frères) => l'un à COTE de l'autre 
+        */
+    </style>
+</head>
+<body>
+    <!--  balise en block -->
+    <h1>L</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti.</p>
+    <hr>
+    <!-- balise en ligne -->
+    <a href="#"> lien hypertexte qui amène vers un page</a>
+    <span>un autre texte</span>
+</body>
+</html>
+
+<!-- 
+    en plus d'avoir ce comportement en box inline / bloc en + 
+    chaque box (balise) que l'on ajoute dans la page dispose de plusieurs couches autres du contenu 
+
+    4 niveaux :
+
+    contenu => texte que vous avez écrit dans la balise 
+    marge interne = padding (espacer le contenu de la bordure de la balise)
+    bordure : border (la liste de la balise)
+    marge externe = margin (permet d'espacer les balises les uns des autres )
+
+    h1 ou a 
+
+    texte intérieur => contenu
+    padding : séparer le contenu de la bordure
+    border 
+    margin
+
+    02-box.html
+
+-->

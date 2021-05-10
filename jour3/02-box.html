@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background: yellow;
+            padding:10px; /* contenu + marge interne en haut en bas à gauche et à droite => couleur jaune*/
+            border:4px solid blueviolet; /* limite externe de la balise h1*/
+            margin:50px 0; /* marge externe de la balise h1 couleur brown */
+        }
+        div{
+            padding: 1px;
+        }
+        p{
+            background: green;
+            color:white;
+        }
+        a{
+            background: purple;
+            padding: 20px;
+            border:5px solid coral;
+            margin:50px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur rerum reprehenderit delectus, magni laboriosam incidunt libero quisquam esse veritatis voluptatem.</p>
+    </div>
+    <hr>
+    <a href="#">un peu de texte</a>
+    <a href="#">un autre texte</a>
+    <!-- Aboubacar -->
+    <section><!-- balise en block OK !! -->
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <section><!-- KO -->
+        <section></section>
+    </section>
+    <article><!-- OK mais déconseillé -->
+        <section></section>
+    </article>
+    <div>
+        <section>
+            <div></div>
+        </section>
+    </div>
+
+    <div>
+        <article>
+            <div></div>
+        </article>
+    </div>
+</body>
+</html>
+<!-- 
+    lorsque l'on faut de la mise en page (layout) en html / css 
+    manipuler des block / (un peu comme de lego) => pousser les uns autres 
+    balise en bloc / balise en ligne
+    => https://buzut.net/101-balises-html5-exemples/
+    => https://www.alsacreations.com/actu/lire/1776-element-main-html5.html (balise)
+    03-exemple.html 
+
+-->
