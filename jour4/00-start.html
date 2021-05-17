@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        en html existe deux grandes familles de balises
+        balise en bloc 
+            balise p h1 ... h6 
+            balise de zone div header footer article ...
+
+        balise en ligne 
+            lien <a>
+            balise pour les champs de formulaires 
+            input select textarea
+    -->
+    <style>
+       .zone1 h1{
+            border:2px solid green;
+        }
+        .zone1 p{
+            border:2px solid red;
+        }
+        /*balise en block largeur = largeur de leur parent 
+            balises en block => l'une en dessous de l'autre
+        */
+
+        .zone1 a{
+            border:2px solid blue;
+        }
+        .zone1 input{
+            border:2px solid pink;
+        }
+        /*balise en ligne largeur = largeur de leur contenu
+            balise en ligne => l'un à côté de l'autre !! 
+         */
+
+    </style>
+    <div class="zone1">
+        <h1>Zone 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, modi?</p>
+        <a href="">lire la suite encore du texte</a>
+        <input type="text">
+    </div>
+    <hr>
+    <!-- display flex => 2015 
+        permet de faciliter la vie pour réaliser des mises en page 
+    -->
+
+    <style>
+        /* utilise la balise parent directe des balises à mettre en forme */
+        .zone2{
+            display: flex;
+            /* les balises enfants direct de zone2 => se mettre l'un à côté de l'autre */
+        }
+
+        .zone2 > *{
+            border:2px solid yellow;
+        }
+    </style>
+
+    <div class="zone2">
+        <h1>Zone 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, modi?</p>
+        <ul>
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+    </div>
+
+    <hr>
+    <!--  pourquoi display flex est aussi pratique pour faire la mise en page -->
+    <style>
+        .zone3{
+            display: flex;
+            /*
+                faciliter la disposition flex item
+                align-items => aligner les flex items verticalement
+                justify-content => espacer horizontalement les flex items 
+            */
+            border:3px solid black;
+            align-items: center; 
+            /* center / flex-start / flex-end / stretch / baseline */
+        }
+        .zone3 h2, .zone3 img{
+            border:2px solid pink;
+            margin: 0;
+        }
+        .zone3 h2{
+            /* padding: 30px 0 0 0; */
+            font-size: 45px;
+        }
+    </style>
+    <div class="zone3"><!--  flex container -->
+        <img src="http://via.placeholder.com/200x100?text=logo" alt=""><!-- flex item -->
+        <h2>Ma compagnie</h2><!-- flex item -->
+    </div>
+</body>
+</html>
+<!-- 
+    Bonjour, j'ai raté les deux premières minutes. As-tu expliqué comment avoir cette fenêtre de rendu temps réel ?
+    extensions => browser preview
+
+    Marilyse MANSE
+    .zone2* et div>h1>p
+
+    .zone2 * ne pas oublier l'espace 
+    dans la balise qui a la class zone2 sélectionner TOUTES les balises dedans * enfant / petit enfant / petit petit enfant
+
+    .zone2 > * 
+    dans la balise qui a la class zone2 sélectionner TOUTES les balises dedans * enfant direct UNIQUEMENT 
+
+    div>h1>p
+    dans la balise div sélection la ou les balises h1 qui sont les enfants directes > qui contiennent une ou plusieurs balise p enfant dans direct
+
+
+    David LATH
+
+    avec l'arrivée de display flex on ne parle plus de margin et de padding?
+
+    réduire énormément les galères de centrage manuel avec margin et de padding 
+
+
+-->

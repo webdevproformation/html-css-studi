@@ -1,0 +1,38 @@
+https://github.com/webdevproformation/html-css-studi
+
+Display inline
+Display block
+
+1
+Display : flex 
+	- enfant directe
+	- l'un à côté de l'autre (quelque soit la balise)
+	- enfants largeur de son contenu / 
+	- enfant hauteur la plus de l'enfant le plus haut (margin comprises)
+	- dans le parent (voir la partie après)
+
+2 gestion de l'espace horizontal 	
+justify-content : flex-start / flex-end / center / space between / space-round
+
+3 gestion de l'alignement des enfants dans l
+align-items: streched/ flex-start / flex-end / center / baseline
+
+4 largeurs enfants
+enfants : width  / flex 
+
+5 forcer le retour à la ligne 
+flex wrap : nowrap / wrap 
+
+6 pour 1 enfant en particulier 
+align-self
+
+7 flex-direction : row / columns
+
+-------------
+-------------
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+
+
+
+

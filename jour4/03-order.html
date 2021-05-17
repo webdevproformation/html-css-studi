@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            align-items: baseline;
+            border:2px solid blue;
+            justify-content: space-between;
+        }
+        /*order 0 */
+        header h1{
+            order:1; /* chiffre entier les chiffres à virgule ne sont pas acceptés 1.2 1.3 ... */
+        }
+        header img{
+            order: 2;
+        }
+        header div{
+            order : 3;
+        }
+
+        section{
+            display: flex;
+            /*overflow débordement de l'écran */
+            flex-wrap: wrap;
+            /* si le flex item p arrive au bout de son parent ALORS accepte le retour à la ligne */
+            justify-content: space-between;
+        }
+        section p{
+            border:2px solid red;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="http://via.placeholder.com/200x50?text=logo" alt="">
+        <h1>MonSite</h1>
+        <div>
+            🔥
+        </div>
+    </header>
+
+    <section>
+        <!-- p*20>lorem30 -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim sequi id asperiores iusto soluta, dignissimos ipsum laboriosam totam. Fugiat laudantium ut quibusdam. Repellat corporis recusandae deleniti suscipit. Culpa, ea explicabo.</p>
+        <p>Deserunt commodi cumque nobis accusamus quia debitis dicta, consectetur placeat, quo molestias, laudantium provident consequatur a libero error quos! Dicta sapiente ipsum reprehenderit dolorum doloribus odit natus possimus odio. Delectus?</p>
+        <p>Assumenda debitis sequi labore alias voluptate accusamus fugit porro. Ex fugit vitae, adipisci quaerat temporibus, voluptate soluta maxime excepturi voluptatum iure quos velit voluptates! Excepturi quos doloribus modi reprehenderit earum.</p>
+        <p>Magni quam dicta quasi vitae odio. Deleniti ut velit doloribus recusandae eum accusantium est qui nostrum, quis harum sequi numquam nam maxime omnis corrupti corporis officia nesciunt itaque? Voluptate, ab.</p>
+        <p>Ipsa aperiam natus similique, porro dignissimos cupiditate, quasi, ducimus et est doloremque officiis dolorem harum animi laudantium a temporibus consequatur beatae nisi asperiores. Magni veritatis, quam cumque cum officia deserunt.</p>
+        <p>Repellendus alias laboriosam placeat, culpa tempora totam velit. Deleniti vitae ipsum maiores, pariatur incidunt similique beatae iusto excepturi minus, optio quasi enim nihil inventore exercitationem ad iure quo officiis laboriosam?</p>
+        <p>Sint voluptas autem quod maxime deserunt nihil est optio quidem error tempora tenetur molestias ipsam reprehenderit impedit quibusdam nesciunt iusto, asperiores vitae! Culpa error molestiae assumenda tempore obcaecati suscipit quasi.</p>
+        <p>Explicabo quis eius iste, animi atque laboriosam sunt incidunt aut quos fuga? Neque sed quos possimus autem iste at iure rerum praesentium dolorum, consectetur nulla veritatis excepturi, itaque, commodi molestias.</p>
+        <p>Sequi voluptates eaque ullam qui ipsa officiis delectus fugit, aperiam doloribus. Amet magni, perferendis debitis possimus placeat porro ea consectetur. Corporis, nostrum harum error excepturi molestiae assumenda dignissimos quod asperiores?</p>
+        <p>Iusto tenetur numquam delectus saepe culpa vel impedit libero. Accusantium odit aliquid ratione omnis officiis perferendis unde, velit, alias laboriosam sunt esse impedit dolores cupiditate ipsam reprehenderit rem labore obcaecati?</p>
+        <p>A sapiente totam nam recusandae adipisci sit quasi rerum dicta iure, natus eligendi quae fuga repellat error, vel sunt. Dolorum voluptatibus dolore voluptatem, numquam ratione maxime totam tempore aperiam fugiat?</p>
+        <p>Nemo suscipit sit explicabo quos ullam asperiores voluptatibus repellendus laboriosam nam magnam. Blanditiis enim nostrum vero aspernatur dolorum excepturi facilis aliquid tenetur earum quia eveniet consequuntur, accusantium molestiae eum quas.</p>
+        <p>Qui, non. Molestiae, magni, hic numquam blanditiis officiis fugiat esse nemo voluptatum nulla in veritatis autem quidem excepturi illum odio! Doloremque, cum adipisci. Eaque quisquam minus accusamus consectetur qui? Voluptatum.</p>
+        <p>Error commodi amet reprehenderit id, adipisci architecto culpa magni, non iure unde blanditiis? Quaerat distinctio, ratione, ea, eligendi corporis unde reiciendis tenetur ad qui eveniet earum molestiae mollitia veritatis ab!</p>
+        <p>Optio, voluptatibus impedit incidunt non perferendis obcaecati earum itaque cum delectus veniam. Ad delectus inventore numquam, modi laboriosam ducimus, libero natus corrupti iste aut vero, odit fugit in quasi molestias.</p>
+        <p>Voluptatum consectetur repellat eligendi pariatur in at maxime temporibus quas officiis, omnis deserunt quam, iusto facilis facere. Praesentium debitis recusandae neque. Provident corporis consequuntur cumque praesentium sequi voluptates, dolor laboriosam!</p>
+        <p>Cum, libero voluptatibus? Dolores ducimus voluptate et veniam consequuntur, hic expedita nihil quos sunt aliquam id tempore doloribus odit esse necessitatibus quis cum ullam eligendi repudiandae iste inventore placeat voluptas.</p>
+        <p>Nemo perferendis expedita, atque ex molestiae quo ipsum. Animi adipisci odit, reprehenderit nulla vitae placeat ipsum dolorem. In aspernatur non laudantium voluptatibus vel, similique ducimus! Consectetur voluptates praesentium temporibus dignissimos?</p>
+        <p>Nostrum mollitia maxime fugiat eos placeat cum blanditiis eligendi esse similique. Consequatur aliquam ipsam blanditiis doloribus quam quod est, sequi tempora, eveniet ab, velit ea? Velit optio vitae rerum qui?</p>
+        <p>Ea tempora dignissimos ullam quis officia! Debitis, corporis? Libero accusantium iste deserunt, et asperiores ab molestias corrupti corporis quos, similique minus architecto voluptas sunt excepturi molestiae illum cum. Veniam, ducimus?</p>
+    </section>
+    <!-- https://emojipedia.org/ -->
+</body>
+</html>

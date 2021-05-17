@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zone1{
+            display: flex;
+            align-items: center;
+            border:2px solid plum;
+            /* justify-content  permet de gérer la position de l'espace entre les flex items */
+            justify-content: space-around;
+            /* flex-start , flex-end , center , space-between , space-around*/
+            /* 
+                justify-content et align-items ne fonctionne QUE si dans le sélecteur css  il y a AUSSI la règle display flex  
+            */
+        }
+        .zone1 > * {
+            border:2px solid red;
+        }
+
+        .zone1 h2{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="zone1">
+         <img src="http://via.placeholder.com/200x100?text=logo" alt="">
+         <h2>Titre site</h2>
+         <h2>un texte un peu plus long</h2>
+         <h2>Titre site</h2>
+         
+    </div>
+    <!-- 
+        ou alors je confonds avec align-content
+    -->
+
+    <hr>
+
+    <!-- 
+        Logo Monsite  .................Accueil / Présentation
+    -->
+    <style>
+        header{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            border:2px solid red;
+        }
+        header div{
+            display:flex;
+            align-items: center;
+            border:2px solid green;
+        }
+        header div img{
+            margin-right: 20px;
+        }
+        header div h1{
+            font-size: 15px;
+        }
+        header ul{
+            display: flex;
+            list-style: none;
+            border:2px solid blue;
+        }
+       
+        header ul .first{
+            margin-right: 5px;
+        }
+    </style>
+    <header>
+        <div>
+            <img src="http://via.placeholder.com/200x50?text=logo" alt="">
+            <h1>MonSite</h1>
+        </div>
+        <ul>
+            <li class="first"><a href="#">Accueil</a></li>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </header>
+    <!-- 
+        David LATH
+        19:52
+
+        text-align=align-item?
+
+        text-align: aligner des éléments en ligne 
+        text-align => centrer du texte / img dans une balise en bloc
+    -->
+
+    <hr>
+    <style>
+        .p{
+            text-align: center; /* aligner un texte HORIZONTALEMENT*/
+        }
+    </style>
+    <p class="p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo cum! Ullam dolor tenetur omnis eaque? Modi amet fugit odit?
+    </p>
+
+    <hr>
+    <style>
+        .exemple{
+            display: flex;
+            align-items: center; /*alignement VERTICAL DANS un flex container*/
+        }
+    </style>
+    <div class="exemple">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem, ipsum.</p>
+    </div>
+
+    <!-- 
+        Marilyse MANSE
+        et le FLOAT quand doit-on l'utiliser si on utilise le Display : flex;
+    -->
+    <style>
+        .exemple2 img{
+            float:right;
+            margin-right: 10px;
+        }
+    </style>
+
+    <div class="exemple2">
+        <img src="http://via.placeholder.com/200x50?text=logo" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, molestiae nesciunt nihil enim maiores perferendis quas nam voluptatibus repellendus quis non rem quae! Perferendis vero ipsum, ducimus doloremque in atque cumque rem, maiores necessitatibus aliquam facilis! Mollitia repellat dolorum architecto, minus provident, quis illo repudiandae corporis inventore iste odio neque.
+    </div>
+
+</body>
+</html>
