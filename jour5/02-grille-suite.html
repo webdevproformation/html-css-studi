@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+        .grille{
+            display: grid;
+            grid-template-columns: 100px 300px 100px;
+            grid-gap: 20px 50px;
+            /* grid-gap permet d'espacer horizontalement et 
+            verticalement les différentes cellules de la grille 
+
+            deux manières d'être utilisées 
+            grid-gap: 20px horizontalement et verticalement
+            grid-gap: 20px 50px;  horizontalement 50px; et 
+            verticalement 20px 
+
+            et par rapport au tableau ? => ça ressemble beaucoup
+            tableau en html 
+            <table>
+                <tr>
+                    <td>
+            => tableau qui fait 2 colonnes et 3 lignes 
+            => tableau qui fait 3 colonnes et 2 lignes 
+            => modifier ton html 
+
+            mais grid c'est considérer comme un tableau ou on peut l'utiliser pour faire du layout?
+
+            règle comme flex box => utilisé pour faire du layout
+            de mise en page
+
+            on utilise grid que sur les balises blocs?
+            parent (balise en bloc) et des enfants article => bloc
+                                        balise en ligne a 
+                                                        img 
+                                                        input 
+
+            les GRID pouyr le layout c'est royal, mélangé avec Flexbox c'est le must :)
+                        
+
+            display grid ET display flex 
+            => display grid  => grille / tableau (grille !! )
+            multi ligne !
+            => display flex mise en page sur 1 ligne de design 
+        
+            => chacun a sa spécialité 
+            => il y a des cas où les deux display sont utilisables
+            => mais certains où il n'y a que le display grid 
+            qui fonctionne et d'autres cas QUe le display flex
+            odans les zones crees avec grid je peux y integer des formulaires , des tableaux ..?
+
+            position : relative / absolute
+            */
+        }
+        article{
+            border:3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="grille">
+        <!-- article*5>(img[src="http://via.placeholder.com/300x300"])+p>lorem10 -->
+        <article>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, sapiente?</p>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <p>Architecto voluptates obcaecati quo vero voluptatem ab accusantium animi recusandae.</p>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <p>Recusandae doloremque architecto perspiciatis voluptates iusto itaque cupiditate vero tenetur!</p>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <p>Obcaecati ab libero quis possimus ipsa nisi assumenda! Suscipit, assumenda!</p>
+        </article>
+        <article>
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <p>Hic, facere aperiam repellat doloremque dolor placeat atque libero eum.</p>
+        </article>
+    </div>
+</body>
+</html>
+<!-- 
+    display grid
+    grid-template-column
+    grid-gap 
+    dédiée pour display grid => repeat()
+-->

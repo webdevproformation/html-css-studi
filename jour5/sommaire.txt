@@ -1,0 +1,31 @@
+Comprendre display grid
+
+https://github.com/webdevproformation/html-css-studi
+
+
+-----------------
+-----------------
+
+display : grid;
+
+grid-template-columns
+grid-template-rows
+
+grid-gap : largeurpx ; (raccourci de column-gap + row-gap)
+
+-----------------
+
+aide de la console
+
+-----------------
+
+la nouvelle unité : le fr
+
+-----------------
+
+repeat(nbfois,rail rail);
+
+-----------------
+
+grid-column
+grid-row

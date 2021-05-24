@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            border:2px solid red;
+            display: grid;
+            /*3 colonnes*/
+            grid-template-columns: 100px 1fr 100px;
+        }
+        header > * {
+            border:2px solid purple;
+        }
+        header ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          /*   display: grid;
+            grid-template-columns: repeat( 4, 1fr ); */
+            display: flex;
+            justify-content:space-between;
+        }
+        li{
+            border:2px solid yellow;
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="http://via.placeholder.com/100x50?text=logo" alt="">
+        <ul>
+            <li>Lorem.</li>
+            <li>Accusamus.</li>
+            <li>Eum?</li>
+            <li>Provident.</li>
+        </ul>
+        <!-- https://emojipedia.org/ -->
+        <div class="social">
+            🍇
+            🍋 
+            🍐
+        </div>
+    </header>
+</body>
+</html>
+
+<!-- 
+    grid-column
+-->

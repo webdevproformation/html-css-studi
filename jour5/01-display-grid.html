@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ensemble la nouvelle règle css
+        display grid 
+        sur Visual Studio 
+        j'ai installé 2 extensions 
+
+        live server => permet d'écrire 
+        lors de l'enregistrement
+        mettre à jour le navigateur 
+
+        browser preview 
+        => outil intéressant notamment lorsque 
+        l'on fait des démos => live !! 
+        comment on choppe les extension @malik?
+
+        redémarrer le logiciel
+
+        Ctrl + Maj + P
+
+        => https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview
+    -->
+    
+    <!-- 
+        display grid => nouvelle règle css
+        permet de créer des grilles faciles
+        avec les différentes balises html 
+        moins 5 ans 
+        très puissante 
+    -->
+    <style>
+        .zone1{
+            border:2px solid blue;
+            display:grid;
+            grid-template-columns: 100px 200px 100px;
+            /* déterminer combien de colonnes 
+            je veux mettre dans ma grille 
+            attention aux espaces 
+            pour chaque colonne => quelle est sa largeur
+            la règle grid-template-columns
+            ne fonctionne QUE si vous avez 
+            écrit dans le même sélecteur 
+            display:grid;
+            display grid agit uniquement sur 
+            les balises enfant directes
+
+            */
+        }
+        .zone1 p{
+            border:2px solid red;
+        }
+        /*mettre les p dans une grille / tableau
+            combien de colonnes : 3 
+            laisser au navigateur 
+            déterminer combien de lignes : 2 lignes 
+        */
+    </style>
+    <div class="zone1">
+        <!-- p*5>lorem15 -->
+        <p> <a href="#">lien</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eligendi cumque alias aliquam iure pariatur.</p>
+        <p>Mollitia incidunt, earum aut ipsum placeat maiores quo, quas nesciunt ut voluptatibus atque, excepturi dicta!</p>
+        <p>Maxime, debitis nemo molestias voluptas, maiores praesentium facilis quibusdam fugit, accusamus ullam eum iure at.</p>
+        <p>Doloribus consequuntur placeat, error aliquam aliquid eos, veniam voluptatibus sapiente iste obcaecati voluptatem harum aperiam.</p>
+        <p>Excepturi aspernatur consequuntur quas adipisci modi quod, ipsam, aut, quos cum alias possimus. Placeat, optio!</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grille{
+            border:3px solid green;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            /* pour éviter de se répéter sur les largeurs des colonnes
+            il y a une nouvelle fonction repeat()*/
+            grid-template-columns: repeat( 4 , 100px);
+            /*
+             grid-template-columns: repeat( 2 , 100px);
+            grid-template-columns: 100px 100px;
+
+            grid-template-columns: repeat( 4 , 100px);
+            grid-template-columns: 100px 100px 100px 100px;
+             */
+            grid-gap:20px;
+            /* display: flex; PRIORITE : dernière règle css 
+            qui est écrite qui s'applique et les règles css précédentes
+            sont ignorées */
+            /*
+            Du coup pour le responsive, tu conseilles de mettre le template container, en grid une colonne ou j'ai l'habitude de le faire en flexbox pour le mobile? dans les media queries
+            
+            */
+        }
+        span{
+            border:3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grille">
+        <!-- span*10>{$} -->
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+    </div>
+</body>
+</html>
+
+<!-- fr fraction 
+04-fr.html
+-->

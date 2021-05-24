@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:2px solid red;
+        }
+        h2{
+            border:2px solid green;
+        }
+        form{
+            display:grid;
+            grid-template-columns: 100px 1fr;
+            grid-gap:15px;
+        }
+        h2{
+            grid-column: span 2;
+            /* pour la balise h2 au lieu d'avoir une largeur 1 colonne
+            100px 
+            h2 prend la largeur de 2 colonnes 
+            100px + 1fr
+            */
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>questionnaire de satisfaction</h2>
+        <label for="">Prénom</label>
+        <input type="text">
+        <label for="">nom</label>
+        <input type="text">
+        <label for="">date</label>
+        <input type="date">
+        <input type="submit">
+    </form>
+</body>
+</html>

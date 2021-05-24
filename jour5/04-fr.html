@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:3px solid yellow;
+            width: 50%;
+            display:grid;
+            grid-template-columns: 100px 1fr;
+            /* largeur de 700px - 100px - 200px = 400px*/
+            /* à la place d'utiliser des largeurs
+            pour cellules de ma grille en px 
+            1fr = fraction 
+            permettre au navigateur de calculer la largeur suivante
+            grille 2 colonnes : 100px => la 2ème colonne fasse largeur restante
+            avant le passage de ligne 
+            */
+            grid-gap: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Prénom</label>
+        <input type="text">
+        <label for="">nom</label>
+        <input type="text">
+        <label for="">date</label>
+        <input type="date">
+    </form>
+</body>
+</html>
+
+<!-- 
+    05-menu.html
+-->
