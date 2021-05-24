@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grille{
+            display:grid;
+            width:700px;
+            grid-template-columns: 350px 1fr;
+            /* 1fr = ??? 
+                500px - 200px = 300px = 1fr
+                700px - 200px = 500px = 1fr
+                700px - 350px = 350px = 1fr 
+            */
+            border:2px solid pink;
+        }
+        .item1{
+            border:2px solid blue;
+        }
+        .item2{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="grille">
+        <p class="item1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, nulla?</p>
+        <p class="item2">Enim culpa, nisi incidunt suscipit repellendus tenetur sunt hic praesentium?</p>
+    </div>
+</body>
+</html>
