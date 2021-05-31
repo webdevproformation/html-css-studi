@@ -23,19 +23,19 @@
             premium
             suite de luxe
     -->
-    <form action="#">
+    <form>
         <label for="dt_arrivee">Vous arrivez le :</label>
-        <input type="date" id="dt_arrivee">
+        <input type="date" id="dt_arrivee" name="dt_arrivee">
         <!--  le champ et en + datepicker => calendrier
         cliquer sur la date concernée => remplisse le champ : Chrome / Edge / fireFox 
             caniuse
             https://caniuse.com/
             https://caniuse.com/?search=input%20type%3D%22date%22
     -->
-        <label for="dt_depart">Vous quittez l'hôtel le :</label>
-        <input type="date" id="dt_depart">
+        <label for="dt_depart" >Vous quittez l'hôtel le :</label>
+        <input type="date" id="dt_depart" name="dt_depart">
         <label for="gamme">type de chambre :</label>
-        <select id="gamme">
+        <select id="gamme" name="gamme">
             <option value="">Veuillez sélectionner une gamme de chambre</option>
             <option value="base">Base</option>
             <option value="premium">Premium</option>
@@ -47,6 +47,18 @@
     </form>
 </body>
 </html>
+<!-- 
+    http://127.0.0.1:5500/jour6/02-reservation.html?dt_arrivee=2021-05-13&dt_depart=2021-05-05&gamme=premium
+
+    $_GET["gamme"] => requête en BDD => prix 
+
+    Jacques FEITAMA
+20:26
+
+Une liste deroulante proposant des marques de voitures et une suivantes proposant les modeles en fonction de la marque précédemment choisie
+    
+
+-->
 
 <!-- 03-checkout.html => page finale site e commerce : choisir le moyen livraison UPS / Chronopost 
     accepter les cgv => bloqué 
