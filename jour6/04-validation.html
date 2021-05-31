@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-gap: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>la validation avant soumission au serveur</h1>
+    <!-- en HTML5 il est possible de faire des vérifications de ce qui est saisit dans le formulaire AVANT envoie au server-->
+    <form action="#">
+        <label for="nom">nom</label>
+        <input type="text" id="nom" required minlength="3" maxlength="40">
+        <label for="email">email</label>
+        <input type="email" id="email" required pattern="[a-z]{1,}[@]{1}[a-z]{1,}[.]{1}[a-z]{2,}">
+        <!-- lettre@oezrzo.fr : pattern => form 
+        expression régulière => définir la forme d'une chaine de caractère-->
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+<!-- 05-traitement.php SERVEUR -->

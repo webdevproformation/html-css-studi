@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Validation Commande</h1>
+    <p>Synthèse de la commande</p>
+    <ul>
+        <li>Produit 1 - qté : 2 - prix - 10 </li>
+        <li>Produit 2 - qté : 2 - prix - 10 </li>
+        <li>Produit 3 - qté : 2 - prix - 10 </li>
+        <li>Produit 4 - qté : 2 - prix - 10 </li>
+    </ul>
+    <form action="#">
+        <!-- le prestataire de livraison 
+        choix parmi 2 prestataires => 1 seul 
+            soit UPS 10€ / Soit chronopost 12€ 
+        -->
+        <label for="prestataire1">UPS - 10€</label>
+        <input type="radio" id="prestataire1" name="logistique">
+        <label for="prestataire2">Chronopost - 12€</label>
+        <input type="radio" id="prestataire2" name="logistique">
+        <!-- radio = rond -->
+        <div>
+            <label for="cgv">Veuillez cochez la case suivante pour accepter les <a href="#">cgv</a> du site</label>
+            <input type="checkbox" id="cgv">
+            <!-- case à cocher -->
+        </div>
+        <!-- la validation des cgv -->
+        <input type="submit" value="paiement de la commande">
+    </form>
+</body>
+</html>
+<!-- 
+    traitement afficher des prix ... 
+    04-validation.html
+-->

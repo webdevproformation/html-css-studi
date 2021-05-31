@@ -1,0 +1,60 @@
+Nous aborderons : 
+- les différentes balises HTML pour créer un formulaire
+
+label 
+
+- text / email / choix / sélection / ligne multiple / téléchargement / couleur / date 
+
+- case à cocher 
+
+- menu déroulant
+https://www.w3schools.com/TAgs/tag_optgroup.asp
+
+<label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select> 
+
+------------------------
+
+placeholder 
+
+ required minlength / maxlength
+- https://www.w3schools.com/tags/tag_input.asp
+
+- champs avancés : téléphone / champ personnalisé
+
+pattern 
+- https://www.w3schools.com/tags/att_input_pattern.asp
+
+
+<form action="/action_page.php">
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+    <input type="submit">
+</form> 
+
+An <input> element with type="password" that must contain 8 or more characters:
+  <form action="/action_page.php">
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd"
+    pattern=".{8,}" title="Eight or more characters">
+    <input type="submit">
+  </form>
+
+email
+
+  <form action="/action_page.php">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    <input type="submit">
+  </form>

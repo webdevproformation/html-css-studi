@@ -1,0 +1,67 @@
+<!-- 
+    1 n'hésitez pas à poser des questions dans le tchat => répond dès que j'ai fini de présenter le concept 
+
+    2 Visual Studio Code => outil de codage 
+        a live server => permet d'écrire dans la page html <=> navigateur
+        b browser preview => permet d'ajouter directe dans Visual une page qui est navigateur
+            Ctrl + maj + P
+-->
+<!-- 
+    les formulaires en html 
+        - toutes les balises importantes pour créer des formulaires
+        - HTML5 => vérification avant envoie au serveur 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            grid-gap:20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Premier Formulaire</h1>
+    <p>Veuillez remplir le formulaire suivant pour toutes demande d'information</p>
+    <!-- 
+        3 champs 
+            nom 
+            email 
+            zone de texte multiligne
+                l'internaute va pouvoir écrire et faire des sauts de ligne
+     contient l'ensemble des champs du formulaire
+
+     attribut action="" => dire où est ce que l'on après avoir cliqué le bouton de soumission
+     attribut method => Comment les données vont être envoyées au serveur 
+        via l'adresse internet GET / get
+        via tableau caché POST
+    par défaut le navigateur si vous ne mettez pas cet attribut => method="GET"
+        -->
+    <form action="#">
+        <label for="nom">Votre nom : </label>
+        <!--  étiquette : information sur le champ input qui le suit -->
+        <input type="text" id="nom">
+        <!--  input => balise orpheline -->
+        <label for="email">Votre email :</label>
+        <input type="email" id="email">
+        <label for="commentaire">Votre commentaire</label>
+        <!-- input => champ de saisie monoligne-->
+        <textarea id="commentaire" cols="30" rows="3"></textarea>
+        <!-- 
+            input de type submit
+            emojipedia 
+            https://emojipedia.org/
+        -->
+        <div>
+            <input type="submit" value="Merci 🧀">
+        </div>
+    </form>
+</body>
+</html>
+<!-- formulaire de réservation => chambre hotel -->

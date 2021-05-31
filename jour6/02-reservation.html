@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display:grid;
+            grid-template-columns: 160px 1fr;
+            grid-gap: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Réserver une nuit dans notre hotel</h1>
+    <!-- 
+        date d'arrivée
+        date de départ
+        menu déroulant type de chambre 
+            base 
+            premium
+            suite de luxe
+    -->
+    <form action="#">
+        <label for="dt_arrivee">Vous arrivez le :</label>
+        <input type="date" id="dt_arrivee">
+        <!--  le champ et en + datepicker => calendrier
+        cliquer sur la date concernée => remplisse le champ : Chrome / Edge / fireFox 
+            caniuse
+            https://caniuse.com/
+            https://caniuse.com/?search=input%20type%3D%22date%22
+    -->
+        <label for="dt_depart">Vous quittez l'hôtel le :</label>
+        <input type="date" id="dt_depart">
+        <label for="gamme">type de chambre :</label>
+        <select id="gamme">
+            <option value="">Veuillez sélectionner une gamme de chambre</option>
+            <option value="base">Base</option>
+            <option value="premium">Premium</option>
+            <option value="suite de luxe">Suite de luxe</option>
+        </select>
+        <div>
+            <input type="submit" value="rechercher dispo">
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- 03-checkout.html => page finale site e commerce : choisir le moyen livraison UPS / Chronopost 
+    accepter les cgv => bloqué 
+-->
