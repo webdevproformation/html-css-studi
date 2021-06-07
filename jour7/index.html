@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{ 
+            color : black;
+            /* sélecteur état initial */
+            transition : color 2s; 
+            /* nom_propriete_css duree ease delay; 
+                duree ms : millisecondes
+                      s  : secondes
+            */
+        }
+        p:hover{
+            color : red;
+        }
+
+        /* en css avant les accolades 
+        sélecteur css p toutes les balises p dans la page
+                       p:hover condition supplémentaire sous les p dans la page sur lesquels effectuer l'action de souris hover (au dessus)
+        */
+
+        input{
+           /*utiliser la mise en forme par défaut de la balise input*/
+           width:200px;
+           transition: 
+                background 1s linear 1s, 
+                width 1s , 
+                padding 2s ;
+        }
+        input:focus{
+            background: grey;
+            width:400px;
+            padding: 5px 10px;
+            color:white;
+        }
+
+        .logo{
+            margin-top: 40px;
+        }
+
+        img{
+            transition : transform 1s , opacity 1s;
+            opacity: 0.5;
+        }
+        .logo:hover img{ /*lorsque je passe la souris sur le parent de l'image*/
+            transform : rotate(45deg) scale(1.2);
+            opacity: 1;
+        }
+
+        .diapo1{
+            transform:translate(-500px);
+            transition : transform 0.5s;
+        }
+        .galerie:hover .diapo1{
+            transform:translate(0px)
+        }
+
+        .diapo2{
+            transform:translate(-700px);
+            transition : transform 0.5s linear 0.5s;
+        }
+        .galerie:hover .diapo2{
+            transform:translate(0px)
+        }
+
+        .diapo3{
+            transform:translate(-700px);
+            transition : transform 0.5s linear 1s;
+        }
+        .galerie:hover .diapo3{
+            transform:translate(0px)
+        }
+
+        .diapo4{
+            transform:translate(-1000px);
+            transition : transform 0.5s linear 1.5s;
+        }
+        .galerie:hover .diapo4{
+            transform:translate(0px)
+        }
+        /*   https://animate.style/ */
+        /* diaporama */
+    </style>
+</head>
+<body>
+    <!-- effet transition 
+        lorsque l'on va passer la souris sur le p => couleur du texte qui va passer de 
+        sa couleur par défaut noir => rouge
+        en 1 seconde
+
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia dignissimos. Ut beatae impedit delectus perspiciatis rem officia optio necessitatibus.</p>
+    <input type="text" class="search">
+    <div class="logo">
+        <img src="http://via.placeholder.com/200x50" alt="">
+    </div>
+    <div class="galerie">
+        <img src="http://via.placeholder.com/200x50" alt="" class="diapo1">
+        <img src="http://via.placeholder.com/200x50" alt="" class="diapo2">
+        <img src="http://via.placeholder.com/200x50" alt="" class="diapo3">
+        <img src="http://via.placeholder.com/200x50" alt="" class="diapo4">
+    </div>
+
+</body>
+</html>

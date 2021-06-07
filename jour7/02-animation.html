@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        l'autre manière de faire des animations => animation
+    -->
+    <style>
+        p{
+            /*animation: apparition 3s forwards; */
+            /*animation va se lancer automatiquement au moment du chargement de la page*/
+        }
+        @keyframes apparition { /* image clé : situation clé */
+            0%{
+                transform:translateY(300px);
+                opacity: 0;
+            }
+            50%{
+                transform:translateX(100px);
+                opacity: 1;
+                color:blue;
+            }
+            100%{
+                transform:translateX(0px);
+                opacity: 0.8;
+                color:green;
+            }
+        }
+
+        .circle{
+            width:100px;
+            height:100px;
+            background: red;
+            border-radius: 50%;
+            margin-left: 300px;
+            box-shadow: 2px 2px 2px blueviolet;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            20%{
+                box-shadow: 2px 2px 3px blueviolet;
+            }
+
+            40%,60%{
+                box-shadow: 2px 2px 6px blueviolet;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, ab.</p>
+    <div class="circle"></div>
+</body>
+</html>

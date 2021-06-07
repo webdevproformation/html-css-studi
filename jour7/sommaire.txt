@@ -1,0 +1,15 @@
+https://github.com/webdevproformation/html-css-studi
+
+comment faire de l'animation en utilisant css 
+
+deux règles css à connaître 
+
+animation qui va être lancer suite à une action réalisée par l'internaute 
+suite à un passage de souris sur un élément dans la page
+
+transition : nom_propriete_css duree ease delay;
+            nom_propriete_css duree ;
+
+animation qui va se lancer au moment du chargement de la page 
+animation : nom duree ease delay nb-fois-realiser ; (5 valeurs)
+            nom duree ;

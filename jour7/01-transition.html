@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* quasiment TOUTES les règles css sont animables 
+            width  height marge padding text-shodow box-shadow
+            border
+            transform : 
+            color 
+            font-size
+            background => color / position
+            
+            pas possible d'animer 
+            display : pas animable 
+        */
+        
+        .img1{
+            display: flex;
+            justify-content: center; 
+            transition:justify-content 1s;
+        }
+        .img1:hover{
+            justify-content: flex-end;
+        }
+
+        .img2{
+            opacity: 1;
+            transition: opacity 1s , transform 1s;
+        }
+        .img2.disparition{
+            opacity: 0;
+            transform:translateX(600px)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <img src="http://via.placeholder.com/200x100" alt="">
+    </div>
+
+    <button>lancer animation</button>
+    
+    <div class="img2 ">
+        <img src="http://via.placeholder.com/200x100" alt="">
+    </div>
+
+    <script>
+        document.querySelector("button").addEventListener("click", function(){
+            document.querySelector(".img2").classList.toggle("disparition");
+        });
+    </script>
+</body>
+</html>
