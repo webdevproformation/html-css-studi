@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, p{
+            margin: 0;
+        }
+        header{
+            background: red;
+            /* height: 120px; */
+            padding: 20px 0 20px 20px; 
+        }
+        h1{
+            background: blue;
+            width:50%;
+            color:white;
+        }
+
+        main{
+            background: yellow;
+            padding: 20px 30px 50px 0px;  /*espacer les éléments => utiliser des padding */
+        }
+
+        p{
+            background: maroon;
+            color:white;
+        }
+        /*
+        padding : marge intérieur => rembourage 
+        padding : 20px ; sur les 4 côtés
+        padding : 20px 50px ;  20px en haut en bas et 50px à gauche et à droite !
+        padding : 20px 30px 50px 0px ; 20px en haut 30px droite 50px en dessous et 0px à gauche 
+        */
+    </style>
+</head>
+<body>
+    
+    <header><!-- parent 1-->
+        <h1>Mon site responsive</h1> <!--enfant -->
+    </header>
+    <!--  parent 1 et le frère de parent 2 -->
+    <main> <!-- parent 2 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum iste voluptatem illo numquam suscipit earum eligendi sint et, quod esse incidunt nesciunt quidem similique est dolorem, fugiat quo. Alias eaque autem quidem, vero repellat qui quaerat? Vero perferendis molestias corporis doloremque placeat. Beatae, rem. Aut corporis perspiciatis in asperiores?</p>
+        <!--  enfant -->
+    </main>
+
+</body>
+</html>
+
+<!-- 04-box-sizing.html -->

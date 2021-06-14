@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zone1{
+            background: red;
+            padding:30px;
+        }
+        .enfant1{
+            width:50%;
+            background: yellow;
+            text-align: justify;
+        }
+
+        .zone2{
+            background: rgb(88, 87, 87);
+            padding:30px;
+        }
+        .enfant2{
+            width:50%;
+            padding: 0 30px; 
+            text-align: justify;
+            box-sizing: border-box;
+            /* css tu dois inclure les 60px 30 px + 30px DANS les 50% et non les cumuler par défaut */
+            /*padding à gauche et à droite sur un élément et en même temps width
+            la width et le padding latéral se cumulent */
+            background: rgb(0, 255, 255);
+        }
+        /* 
+            padding : margin intérieure d'une balise
+            margin : marge extérieure d'une balise 
+        */
+    </style>
+</head>
+<body>
+    <div class="zone1">
+        <div class="enfant1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia beatae iure ut, numquam iusto praesentium eveniet ad. Neque cum, similique, facere sit autem praesentium corporis totam laboriosam, laborum accusantium iste?
+        </div>
+    </div>
+
+    <div class="zone2">
+        <div class="enfant2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia beatae iure ut, numquam iusto praesentium eveniet ad. Neque cum, similique, facere sit autem praesentium corporis totam laboriosam, laborum accusantium iste?
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 05-container.html -->

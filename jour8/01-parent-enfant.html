@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background: blue;
+            padding:20px;
+            /* ne jamais mettre de largeur en px */
+            /* par défaut si je ne mets pas largeur à une balise en block => 100% de son parent */
+            /* width:700px; */
+            width:90%;
+        }
+
+        .enfant{
+            background: yellow;
+            height: 200px;
+            width:50%;
+        }
+        /* au niveau des largeurs des balises parents / enfants
+        toujours utiliser des largeurs en % et jamais de largeur avec des unités absolues comme le px 
+        et si l'élément doit faire 100% de son parent => 
+        par défaut les balises en block prennent 100% de largeur de leur parent 
+        @media => casser les px 
+        */
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="enfant">
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--  02-hauteur-balises.html -->

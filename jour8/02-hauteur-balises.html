@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background: pink;
+            padding:20px;
+           /*  height:300px; */
+        }
+        .enfant{
+            background: green;
+            width:50%;
+            color:black;
+            /* en général, il ne faut pas donner de règle de hauteur pour les éléments*/
+           /*  height:200px; */
+        }
+        /* c'est directement le contenu le texte qui va automatiquement donner la hauteur des balises  */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="enfant">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illum ut accusamus provident nostrum mollitia dolorum, perspiciatis beatae dicta ipsum impedit distinctio officia eos itaque non reiciendis voluptatem eveniet assumenda.
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    L'idéal est de ne pas definir de hauteur et de largeur ?
+    largeur en % 
+    laisse le contenu des balises définir la hauteur automatiquement
+    03-espacer-les-block.html
+-->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, p{ /* h1, p : pour toutes les balises h1 et toutes les balises p */
+    margin: 0;
+}
+
+header{ /*nom de la balise comme sélecteur css */
+    background: red;
+    padding:20px 30px;
+}
+h1{
+    background:black;
+    color:white;
+    width:50%;
+}
+main{
+    background: yellow;
+    padding:20px 30px;
+}
+p{
+    background:blue;
+    color:white;
+}
+
+.emballage{ /* . pour sélectionner la balise html j'utilise l'attribut class  */
+    max-width:900px; /* au maximum la design doit prendre la largeur de 900px */
+    width:90%; /* si la largeur de l'écran < 900px alors c'est cette règle des 90% qui s'applique*/
+    margin:0 auto;
+}
+
+/*
+    Je ne comprend pas pourquoi ce design est dans .html et pas .css
+
+    il est possible d'ajouter du css à un fichier html de plusieurs manières 
+
+*/
+    </style>
+</head>
+<body>
+    <div class="emballage"> <!--  container en anglais / wrapper  -->
+            <!-- cette balise balise qui va définir la largeur maximum de votre site -->
+        <header>
+            <h1>Hello</h1>
+        </header>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat neque pariatur tempore exercitationem rerum quas obcaecati quia rem velit nisi ratione nobis odit dolores repudiandae perferendis beatae ullam reiciendis corporis, maiores dolorum laudantium aperiam! Modi quos ducimus debitis voluptate error!</p>
+        </main>
+    </div>
+</body>
+</html>
+
+<!-- et min -width ? au minimum l'élément doit avoir largeur 50% 
+    quelle est la différence entre la classe h1,p et la classe h1 ?
+
+    06-mobile-first.html
+-->

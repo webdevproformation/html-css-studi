@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        /* commencé D'abord par le design pour les petits formats */
+        img{
+            width:100%;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+
+        @media screen and (min-width: 600px){ /*à partir du moment où l'écran fait une largeur de 600px*/
+            main{
+                display: flex;
+            }
+            img , p{
+                width:50%;
+            }
+            img{
+                object-fit: cover;
+                margin-right: 20px;
+            }
+        }
+        @media screen and (min-width: 850px){
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            ul{
+                display: flex;
+            }
+            li{
+                padding-left:20px;
+            }
+        }
+        .container{
+            max-width: 1000px;
+            width: 90%;
+            margin:0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mon site responsive</h1>
+            <ul>
+                <li>Accueil</li>
+                <li>Présentation</li>
+                <li>Contact</li>
+            </ul>
+        </header>
+        <main>
+            <img src="http://via.placeholder.com/500x200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, rem quisquam harum iusto velit perferendis voluptate aspernatur nam distinctio repudiandae, quibusdam ad nemo voluptas voluptates repellat magni aut fugiat nostrum culpa illum quasi? Quas, corporis vitae tenetur ex mollitia iure alias? Sed voluptatum repellat dolore incidunt magni quis velit minus perferendis dolores aut! Aliquam reiciendis expedita doloremque est dolorum cum.</p>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- 
+    en html => 
+    balise de zone 
+
+    header => zone entête du design
+    main => zone central du design 
+    footer => zone de pied de page du design
+
+    => nouvelle balise html5 pour définir des zones ! 
+    => https://buzut.net/101-balises-html5-exemples/
+    
+    div => zone qui n'a pas de rôle bien défini => utilisable n'importe où dans le html 
+-->
