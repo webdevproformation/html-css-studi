@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* sélectionner tous les p qui sont dans la balise main */
+        /* espace mis entre main et p TOUTES les balises p dans la balises main*/
+        /* espace enfant direct mais aussi les petits enfants */
+        main  p{
+            color:green;
+        }
+
+        /* > */
+        footer{
+            border:2px solid red;
+        }
+        footer > p{ /* p qui sont les enfants directes de la balise footer*/
+            color:red;
+        }
+
+        footer div > p{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </header>
+    <main>
+        <h2>Section 1</h2>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Itaque dignissimos ullam est!</p>
+        <div>
+            <h3>sous section 1</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Itaque dignissimos ullam est!</p>
+        </div>
+        <div>
+            <h3>sous section 2</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Itaque dignissimos ullam est!</p>
+        </div>
+    </main>
+    <footer>
+        <p>merci de nous avoir contacter</p><!--  enfant directe de footer-->
+        <div>
+            <p>Pour s'inscrire à la newsletter </p><!-- petit enfant -->
+        </div>
+        <p>autre p</p><!--  enfant directe de footer-->
+        <div>
+            <p>veuillez utiliser le formulaire suivant </p><!-- petit enfant -->
+        </div>
+        <p>dernier p</p>
+    </footer>
+</body>
+</html>
+
+<!-- -->

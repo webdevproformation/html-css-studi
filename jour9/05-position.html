@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section p:first-child{ /* dans section sélectionne uniquement le 1er p*/
+            color:red;
+        }
+        section p:nth-child(1){ /* équivalent  :nth-child(1) === :first-child */
+            color:red;
+        }
+        section p:last-child{/* dans section sélectionne uniquement le dernier p*/
+            color:pink;
+        }
+        section p:nth-child(5){/* équivalent  :nth-child(5) === :last-child */
+            color:pink;
+        }
+        section p:nth-child(2){ /* 5 nth => 5 ième */
+            color:blue;
+        }
+        section p:nth-child(3){
+            color:green;
+        }
+        section p:nth-child(4){
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa?</p><!-- 1er -->
+        <p>Hic accusamus quia, ullam nihil architecto cum aspernatur odio placeat.</p><!-- 2ème -->
+        <p>Minima autem fugiat sed iusto repellendus odio non dolor repellat.</p>
+        <p>Iste dolore ratione quis libero quos dolorem error velit dolor!</p>
+        <p>Tempore consequuntur recusandae praesentium molestiae amet repellendus, maiores dolor quis!</p><!-- dernier -->
+    </section>
+    <!--  :nth-child() :first-child :last-child 
+        ces 3 pseudos sélecteur fonctionnent parfaitement uniquement SI section UNIQUEMENT des balises p 
+    -->
+</body>
+</html>
+<!-- 
+    06-position-variee.html
+-->

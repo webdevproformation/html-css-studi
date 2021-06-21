@@ -1,0 +1,13 @@
+des sélecteurs css avancés
+
+Nous aborderons :
+
+- :first-child / :nth-child() / :last-child
+
+- :first-of-type / :nth-of-type() / :last-of-type
+
+- [] le symbole + :not()
+- ::after et ::before
+- :first-letter
+
+A l’issue de ce Live vous saurez utiliser les sélecteurs css avancés

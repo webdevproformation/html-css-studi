@@ -1,0 +1,9 @@
+images et média et responsive design
+
+    attribut srcset de la balise <img>
+    balise <picture>
+    règle object-fit
+    règle css background
+    règle css clip
+
+A l’issue de ce Live vous saurez ajouter des images optimales quelquesoit le matériel qui va l'exécuter : smartphone / tablette / ordinateur

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*sélectionner une balise autre chose que sa position ou un attribut class ou id */
+        /* section img:nth-of-type(3){
+            border:3px solid red;
+        } */
+        /*sélectionner via l'attribut alt*/
+        img[alt="cv"]{ /* sélectionne moi toutes les balises img qui ont un attribut alt="cv" */
+            border:3px solid red;
+        }
+        img[alt="paysage"]{
+            border:3px solid lightblue;
+        }
+        p[title]{
+            color:purple;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>Lorem, ipsum dolor.</p>   
+        <img src="http://via.placeholder.com/200x100" alt="paysage">
+        <p title="info">Lorem, ipsum dolor.</p>   
+        <img src="http://via.placeholder.com/200x100" alt="portrait">        
+        <img src="http://via.placeholder.com/200x100" alt="cv">    <!--  img-->    
+        <p>Lorem, ipsum dolor.</p>   
+        <img src="http://via.placeholder.com/200x100" alt="fleur">        
+    </section>
+</body>
+</html>
+<!-- 08-formulaire.html -->

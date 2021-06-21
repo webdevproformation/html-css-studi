@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:before{ /* pseudo élément => ajouter du texte depuis le css dans le html */
+            color:red;
+            content: "hello "; /* document.querySelector().innerHTML en js*/
+            font-size: 10px;
+            text-decoration: underline;
+        }
+        p:first-child::before{
+            color:red;
+            content: "🍓";
+        }
+        p:nth-child(5)::after{
+            content:" 🥕";
+        }
+        a::before{
+            content:"⚓ ";
+        }
+    </style>
+</head>
+<body>
+    <p> Lorem ipsum  <a href="#"> accueil</a> dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>At sed <a href="#">présentation</a> tenetur eos dolorem!</p>
+    <p>In, illum optio! Veniam, earum?</p>
+    <p>Saepe debitis sit  <a href="#">contact</a> architecto vero! </p>
+    <p>Sapiente unde cupiditate expedita perferendis!</p>
+    <p>Quibusdam temporibus <a href="#">lien</a> velit deserunt sed.</p>
+    <p>Atque earum <a href="#">lien</a> repudiandae ducimus facilis.</p>
+    <p>Accusamus minus quaerat est quod?</p>
+    <p>Praesentium ut nam iste accusantium.</p>
+    <p>Illum quod <a href="#">lien</a> cumque qui fuga.</p>
+    
+</body>
+</html>
+
+<!-- 
+    10-first-letter.html
+-->

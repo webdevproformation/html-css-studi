@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pour pointer un élément particulière dans la page 
+            ajouter dans le ou les balises un attribut class="first" 
+        */
+        /* le ou les balises qui ont l'attribut class qui a la valeur first*/
+        .first{
+            color:green;
+            font-size: 1.2em;
+            background: pink;
+        }
+        /* attribut id qui est une attribut que l'on utilise pour mettre en forme des balises html */
+        /* LA balise qui a un attribut id qui a la valeur info*/
+        #info{
+            background-color: black;
+            color:white;
+        }
+        #last{
+            background-color: blue;
+            color:white;
+        }
+        /* le sélecteur le plus utilisé => class */
+        /* id a usage exceptionnel? une balise et une seule 
+            id => sélecteur pour le javascript 
+            document.getElementById()
+        */
+        /*
+            Il existe une limite de valeur pour l'attribut class ? (first, second, third.... )
+        */
+    </style>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <p class="first ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eius.</p>
+    <p id="info">Velit in suscipit excepturi labore dolorum reprehenderit recusandae impedit eligendi.</p>
+    <p id="last">Assumenda, quod veritatis fugiat earum doloremque sit modi consectetur vitae!</p>
+    <ul>
+        <li class="first">Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+</body>
+</html>

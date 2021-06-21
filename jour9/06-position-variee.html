@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- attention dans cet exemple dans la balise section 
+    vous n'avez pas QUE des balises p mais aussi une balise h1 et une balise h2  -->
+    <style>
+       /* attention
+        section p:nth-child(3){
+            color:red;
+        } */
+
+        section p:first-of-type{
+            color:red;
+        }
+        section p:last-of-type{
+            color:yellow;
+        }
+        section p:nth-of-type(2){
+            color:purple;
+        }
+
+        footer h1 , footer li:last-child , footer li:first-child{
+            color:red;
+        }
+        /* footer li{
+            color:red;
+        }*/ 
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Grand titre</h1><!--  1er -->
+        <p>Lorem, ipsum dolor.</p> <!-- 2ème élément --><!-- le 1er p dans section -->
+        <h2>section 1</h2><!-- 3èeme -->
+        <p>Lorem ipsum dolor sit amet.</p> <!-- 4eme --><!-- 2eme p dans section -->
+        <p>Culpa sunt esse rerum facilis.</p>
+        <p>Est asperiores aperiam ipsum fuga?</p>
+        <h2>section 1</h2>
+    </section>
+    <footer>
+        <h1>titre</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae perspiciatis reiciendis omnis perferendis eveniet earum sint deleniti quam saepe!</p>
+        <ul>
+            <li>Lorem.</li>
+            <li>Harum?</li>
+            <li>Nesciunt.</li>
+        </ul>
+    </footer>
+</body>
+</html>
+<!-- nth-child(2) first-child last-child => balise qui ont des enfants identiques  -->
+<!-- nth-of-type(2) :first-of-type last-of-type  => balise qui ont des enfants différents  -->
+
+<!-- 
+    footer p => selectionne le p de footer mais footer, p => selectionne tous les footer et tous les p, c'est ça la différence entre la virgule et l'espace?
+
+    Il serai pas plus "facile" d'utiliser uniquement la balise 
+    nth- plutôt que des first- et last- ? => tous les connaitre 
+-->
+<!-- 
+    []
+    07-crochet.html
+-->
