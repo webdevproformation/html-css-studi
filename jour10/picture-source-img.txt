@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>image responsive avec choix artistique </h1>
+    <picture>
+        <source media="(max-width:400px)" srcset="photo-250x200.jpg">
+        <img alt="" srcset="photo-800x200.jpg 800w, photo-3000x700.jpg 3000w, photo-1200x300.jpg 1200w">
+    </picture>
+</body>
+</html>

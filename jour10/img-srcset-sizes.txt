@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100%;
+        }
+        @media (min-width:850px) {
+            .galerie{
+                display:flex;
+            }
+            .galerie img{
+                width:33.33%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>image responsive</h1>
+    <img src="photo-3000x700.jpg" alt=""
+        srcset="photo-800x200.jpg 800w, photo-1200x300.jpg 1200w, photo-3000x700.jpg 3000w"
+    >
+    <!-- 
+        largeur de l'image en w + du path de l'image dans le srcset
+        fonctionne dans un sens (smartphone => desktop) mais pas dans l'autre 
+    -->
+    <h1>colonnes</h1>
+    <div class="galerie">
+        <img src="photo-3000x700.jpg" alt=""
+        srcset="photo-800x200.jpg 800w, photo-1200x300.jpg 1200w, photo-3000x700.jpg 3000w"
+        sizes="(min-width:850px) 33.33vw, 100vh"
+        >
+        <img src="photo-3000x700.jpg" alt=""
+        srcset="photo-800x200.jpg 800w, photo-1200x300.jpg 1200w, photo-3000x700.jpg 3000w"
+        sizes="(min-width:850px) 33.33vw, 100vh"
+        >
+        <img src="photo-3000x700.jpg" alt=""
+        srcset="photo-800x200.jpg 800w, photo-1200x300.jpg 1200w, photo-3000x700.jpg 3000w"
+        sizes="(min-width:850px) 33.33vw, 100vw"
+        >
+    </div>
+    <!-- 
+        attribut sizes pour les cas des images l'une à côté de l'autre
+        qui peut lui aussi prendre plusieurs valeurs séparées par des virgules 
+        et
+    -->
+</body>
+</html>

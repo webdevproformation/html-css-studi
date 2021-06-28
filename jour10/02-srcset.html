@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width:100%;
+            height:auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>uniquement srcset et src</h1>
+    <img src="photo-1200x300.jpg" alt="" srcset="photo-800x200.jpg 800w , photo-1200x300.jpg 1200w, photo-3000x700.jpg 3000w, photo-250x200.jpg 250w">
+    <!-- dans cet attribut, srcset, il est possible de mettre plusieurs chemin vers plusieurs 
+        images
+        photo-800x200.jpg 800w
+
+        => laisser au navigateur la possibilité de choisir l'image à utiliser en fonction de la largeur de l'écran 
+        si vous êtes sur un vieux navigateur => src="photo-1200x300px"
+        si vous êtes sur un navigateur => srcset=""
+        Inspecter Firefox => Reseau / network 
+        // https://caniuse.com/?search=srcset
+        => oui pour pouvoir utiliser cette technique il faut au préalable plusieurs format d'images 
+        .png petite
+        .grande .jpg
+        .grande .jpg
+    -->
+    <h1>uniquement srcset</h1>
+    <img alt="" srcset="photo-800x200.jpg 800w , photo-1200x300.jpg 1200w, photo-3000x700.jpg 3000w, photo-250x200.jpg 250w">
+
+    <!-- générer plusieurs fois la même image 
+        outil de retouche 
+        windows => paint
+        site photopea => https://www.photopea.com/
+        photoshop / gimp => script / traitement par lots 
+        l'attribut alt="" est à ajouter OBLIGATOIREMENT 
+        référencement naturel 
+        w3validation => img 
+
+        Joel RAKOTOSON RIJA
+        bonsoir , donc c 'est preférable de mettre et de parametrer avec srcset dans le dossier source au lieu le faire avec @ media query?
+
+        ajouter en + des média query et en colloration avec les média query 
+        en fonction de la largeur d'une écran applique ou pas des règles css 
+        l'attribut srcset vient s'ajouter en plus qui va choisir le fichier qui le fichier le plus léger en fonction de la largeur disponible 
+
+        => gain très élévé en terme de vitesse de chargement de la page 
+    -->
+</body>
+</html>
+
+<!--
+    loading
+-->

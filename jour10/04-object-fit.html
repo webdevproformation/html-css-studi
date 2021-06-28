@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       img{
+           width:600px;
+           height:150px;
+           object-fit: cover; /* permettre faire que l'image ne soit pas déformée dans la zone largeur et hauteur imposée en css */
+           object-position: bottom left;
+       }
+   </style>
+</head>
+<body>
+    <img src="mario.jpg" alt="" srcset="mario-600x340.jpg 600w, mario-1200x675.jpg 1200w" sizes="600px">
+</body>
+</html>

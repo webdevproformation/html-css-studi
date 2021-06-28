@@ -1,0 +1,43 @@
+<!--
+    média => les images comment bien les utiliser lorsque l'on veut faire du responsive design 
+    
+    plein de techniques à connaître
+    
+    site responsive design 
+    => le temps de chargement des pages 
+    => smartphone / pas bonne connexion le temps de chargement peut s'allonger => les images que vous allez donner à lire sont trop grandes => format est trop important
+    dans le dossier en cours => 4 images 
+    grande image 3000x700px
+    ordinateur => 1200x300
+    tablette => 800x200
+    smartphone => 250x200
+
+    => prend l' ordinateurs et je l'applique sur tous les écrans  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width:100%; /*au maximum prendre ta largeur naturelle*/
+            height: auto;
+        }
+        /* règle classique qui permet de prendre au maximum sa largeur sinon la largeur de son parent si le parent à une largeur inférieure de l'image 
+            malik.h@webdevpro.net
+        */
+    </style>
+</head>
+<body>
+    <img src="photo-1200x300.jpg" alt="">
+</body>
+</html>
+
+<!-- 
+    bien fonctionner mais pas optimal => smartphone 300px 
+    1200px => lourd => rétrécir 
+    nouvel attribut sur les balises img srcset 
+-->
